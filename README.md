@@ -108,7 +108,8 @@ class Vehicle {
 }
 
 class Plane extends Vehicle {
-    @Override public String move() {
+    @Override 
+    public String move() {
         return "Taking off... " + super.move();
     }
 }

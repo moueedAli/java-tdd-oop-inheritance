@@ -133,6 +133,10 @@ You must create useful tests / update the necessary existing ones.
 
 As an end result, this repository should contain a complete solution that uses both inheritance and composition together.
 
+## Next Steps
+
+Introduce inheritance into your Bob's Bagels OOP Exercise. You will need to refactor your existing code to make this happen. You should end up with multiple classes some of which are related through inheritance.
+
 ## Test Output
 
 ![](./assets/run-a-test.PNG)
@@ -141,7 +145,7 @@ When you run a test, it's either going to pass or fail. When it fails, you'll be
 
 One of the core skills of a developer is debugging stack traces like this. The stack trace details in which classes & files the failure happened, and gives you a line number at the end. Most of the lines in the stack trace are irrelevant most of the time, you want to try and identify the files that you're actually working with.
 
-In the sample screenshot below, we've tried to complete the first step of the exercise but provided an invalid value. Then we run the test associated with it and we see a big red stack trace, a test failure.
+In the sample screenshot below, we've tried to complete the first step of the exercise but provided an invalid value. Then we run the test associated with it, and we see a big red stack trace, a test failure.
 
 At the top, we see `expected: <32> but was: <33>`. This means the test expected the value to be 32, but the value the student provided was 33. We can see this in the code snippets at the top of the screenshot.
 

@@ -29,7 +29,7 @@ class Car {
 class Bike {
     int topSpeed;
 
-    public Car(int topSpeed) {
+    public Bike(int topSpeed) {
         this.topSpeed = topSpeed;
     }
 
@@ -41,7 +41,7 @@ class Bike {
 class Plane {
     int topSpeed;
 
-    public Car(int topSpeed) {
+    public Plane(int topSpeed) {
         this.topSpeed = topSpeed;
     }
 

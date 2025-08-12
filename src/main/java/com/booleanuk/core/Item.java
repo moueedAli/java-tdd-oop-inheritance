@@ -1,14 +1,21 @@
 package com.booleanuk.core;
 
-public class Newspaper extends Item{
-    public Newspaper(String title) {
-        super(title);
+public class Item {
+
+    protected String title;
+    protected boolean onLoan = false;
+
+    public Item(String title) {
+        this.title = title;
     }
 
-    @Override
+    public boolean isOnLoan() {
+        return onLoan;
+    }
+
     public String checkIn() {
         if (!this.isOnLoan()) {
-            return "newspapers are not available for loan";
+            return "item is not currently on loan";
         }
 
         this.onLoan = false;
@@ -16,7 +23,6 @@ public class Newspaper extends Item{
         return "item has been checked in";
     }
 
-    @Override
     public String checkOut() {
         if (this.isOnLoan()) {
             return "item is currently on loan";
@@ -24,6 +30,6 @@ public class Newspaper extends Item{
 
         this.onLoan = true;
 
-        return "newspapers are not available for loan";
+        return "item has been checked out";
     }
 }
